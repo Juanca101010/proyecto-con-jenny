@@ -1,15 +1,4 @@
 
-.light {
-  background-color: white;
-  color: black;
-}
-
-.dark {
-  background-color: black;
-  color: white;
-}
-
-
 
 .contenedor {
   width: 100vw;
@@ -50,6 +39,7 @@ nav.menu a {
   transition: all 0.3s ease-in-out;
 }
 
+
 nav.menu a:hover {
   background-color: #580203;
   color: #fff;
@@ -58,7 +48,7 @@ nav.menu a:hover {
 /* ------------------------------------------------------------------------------------------------------- */
 
 .contenido1 {
-  background: #580203;
+  background: #732728;
   grid-area: contenido1;
 }
 
@@ -77,6 +67,7 @@ nav.menu a:hover {
 .box:hover{
   background-color: #fff;
   color: #580203;
+  transform: scale(1.05);
 }
 
 .btn-like,
@@ -96,11 +87,46 @@ nav.menu a:hover {
   background-color: #580203;
   color: #fff;
 }
+
+/* 
+box.active {
+  background-color:#ffffff;
+  color:#580203;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+box:hover.active{
+  background-color:#580203;
+  color:#ffffff;
+}
+
+btn-like.active,
+btn-probar.active {
+  background-color:#580203;
+  color:#ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+
+btn-like:hover.active,
+btn-probar:hover.active {
+  background-color: #ffffff;
+  color:#580203;
+} */
 /* ------------------------------------------------------------------------------------------------------- */
 
 
 .contenido2 {
-  background: #580203;
+  background: #732728;
   grid-area: contenido2;
 }
 
@@ -117,6 +143,7 @@ nav.menu a:hover {
 .box2:hover{
   background-color: #fff;
   color: #580203;
+  transform: scale(1.05);
 }
 
 .box2 h2 {
@@ -133,4 +160,32 @@ nav.menu a:hover {
 .footer {
   background: #580203;
   grid-area: footer;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+
+#container {
+  background-color:#580203;
+  position: relative;
+  width: 40px;
+  height: 20px;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#container.active .toggle {
+  left: 20px;
+}
+
+.toggle {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transform: scale(.7);
+  border-radius: 25px;  
+  background-color: #fff;
 }

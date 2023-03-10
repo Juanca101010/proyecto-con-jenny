@@ -17,9 +17,12 @@
         <div id="header" class="header">
             <h2> Erotic Game J+J </h2>
             <nav id="menu" class="menu">
-                <a href="#">AAA</a>
-                <a href="#">BBB</a>
-                <a href="#">CCC</a>
+                <a href="#">POCISIONES</a>
+                <a href="#">lUGARES</a>
+                <a href="#">RETOS</a>
+                <div id="container">
+                    <div class="toggle"></div>
+                </div>
             </nav>
         </div>
         <div class="contenido1">
@@ -27,8 +30,9 @@
             <div id="box" class="box">
                 <h2 class="carruseltitle">{{ a.nombre }}</h2>
                 <p>Descripción de la caja</p>
-                <button class="btn-like">Likes</button>
-                <button class="btn-probar">Probar</button>
+                <button id="btn-like" class="btn-like">Likes</button>
+                <button id="btn-probar" class="btn-probar">Probar</button>
+                <button id="btn-probar" class="btn-probar">Calificar</button>
             </div>
             {% endfor %}
         </div>
@@ -105,8 +109,7 @@
                 <h3 class="carruseltitle">Imagen asociada</h3>
                 <img src="{% static 'app/image/018.jpeg' %}" height="76">
             </div>
-            <button id="toggleButton">Cambiar colores</button> <!-- Botón toggle para cambiar colores -->
-        <script src="{% static 'app/js/cambiarcolores.js' %}"></script> <!-- Archivo JavaScript que cambia los colores -->
+        <script src="{% static 'app/js/toggle.js' %}"></script> <!-- Archivo JavaScript que cambia los colores -->
         </div>
         <div class="footer">footer</div>
     </div>
