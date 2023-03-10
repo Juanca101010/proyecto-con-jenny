@@ -1,0 +1,136 @@
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 110px auto 50px / 1fr 1fr;
+  grid-template-areas: 
+    "header header"
+    "contenido1 contenido2" 
+    "footer footer";
+}
+
+
+.header {
+  background-color: #fff;
+  color: #580203;
+  padding: 0px;
+  text-align: center;
+  grid-area: header;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+nav.menu {
+  display: flex;
+  justify-content: center;
+}
+
+nav.menu a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #580203;
+  border-radius: 20px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav.menu a:hover {
+  background-color: #580203;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.contenido1 {
+  background: #580203;
+  grid-area: contenido1;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+.box {
+  background-color:#580203;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+.box:hover{
+  background-color: #fff;
+  color: #580203;
+}
+
+.btn-like,
+.btn-probar {
+  background-color: #fff;
+  color: #580203;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.btn-like:hover,
+.btn-probar:hover {
+  background-color: #580203;
+  color: #fff;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+.contenido2 {
+  background: #580203;
+  grid-area: contenido2;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+.box2 {
+  background-color:#580203;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box2:hover{
+  background-color: #fff;
+  color: #580203;
+}
+
+.box2 h2 {
+  margin-top: 0;
+}
+
+.box2 p {
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+.footer {
+  background: #580203;
+  grid-area: footer;
+}

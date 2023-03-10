@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <title>{% block titulo %}Erotic Game JJ{% endblock %}</title>
+    <link href="{% static 'app/css/estiloshot.css' %}" rel="stylesheet">
+</head>
+
+<html>
+
+<body>
+    
+    <div id="contenedor" class="contenedor">
+        <div id="header" class="header">
+            <h2> Erotic Game J+J </h2>
+            <nav id="menu" class="menu">
+                <a href="#">AAA</a>
+                <a href="#">BBB</a>
+                <a href="#">CCC</a>
+            </nav>
+        </div>
+        <div class="contenido1">
+            {% for a in lista_posiciones %}
+            <div id="box" class="box">
+                <h2 class="carruseltitle">{{ a.nombre }}</h2>
+                <p>Descripción de la caja</p>
+                <button class="btn-like">Likes</button>
+                <button class="btn-probar">Probar</button>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="contenido2">
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/001.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/002.jpg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/003.jpg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/004.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/005.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/006.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/007.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/008.jpg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/009.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/010.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/011.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/012.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/013.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/014.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/015.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/016.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/017.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h3 class="carruseltitle">Imagen asociada</h3>
+                <img src="{% static 'app/image/018.jpeg' %}" height="76">
+            </div>
+            <button id="toggleButton">Cambiar colores</button> <!-- Botón toggle para cambiar colores -->
+        <script src="{% static 'app/js/cambiarcolores.js' %}"></script> <!-- Archivo JavaScript que cambia los colores -->
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
