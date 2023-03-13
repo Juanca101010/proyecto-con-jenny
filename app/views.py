@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 # def index(request):
 #     return HttpResponse("Hola, mundo")
 
-def index(request):
+def posiciones1(request):
     # Obtiene los objetos
     posicioness = posiciones.objects.all()
     # Crea el contexto
@@ -21,6 +21,11 @@ def index(request):
     }
     
     # Envia el contexto al template
-    return render(request, 'app/index.html', contexto)
+    return render(request, 'app/posiciones1.html', contexto)
+
+
+def principal(request):
+
+    return render(request, 'app/principal.html')
 
 

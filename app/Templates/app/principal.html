@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <title>{% block titulo %}Erotic Game JJ{% endblock %}</title>
+    <link href="{% static 'app/css/estiloshot.css' %}" rel="stylesheet">
+</head>
+
+<html>
+
+<body>
+    
+    <div id="contenedor" class="contenedor">
+        <div id="header" class="header">
+            <h2> Erotic Game J+J </h2>
+            <nav id="menu" class="menu">
+                <a href="{% url 'app:principal' %}">HOME</a>
+                <a href="{% url 'app:posiciones1' %}">POCISIONES</a>
+                <a href="#">lUGARES</a>
+                <a href="#">RETOS</a>
+                <div id="container">
+                    <div class="toggle"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="contenido1">
+            <div class="box2">
+                <h2>POCISIONES</h2>
+                <img src="{% static 'app/image/001.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h2>lUGARES</h2>
+                <img src="{% static 'app/image/011.jpeg' %}" height="76">
+            </div>
+        </div>
+        <div class="contenido2">
+            <div class="box2">
+                <h2>RETOS</h2>
+                <img src="{% static 'app/image/012.jpeg' %}" height="76">
+            </div>
+            <div class="box2">
+                <h2>PROXIMAMENTE</h2>
+                <img src="{% static 'app/image/013.jpeg' %}" height="76">
+            </div>
+        </div>
+            
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>
